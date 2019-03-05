@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <title>Curency converter</title>
+</head>
+
+<body>
+
+  <!-- radiobtn -->
+  <!-- <div>
+    <input type="radio" name="currencyName" id="usd" value="0">
+    <label for="usd">usd</label>
+  </div>
+  <div>
+    <input type="radio" name="currencyName" id="eur" value="1">
+    <label for="eur">eur</label>
+  </div> -->
+  <!-- radiobtn -->
+
+  <div class="text-center">
+    <h1>Currency Converter</h1>
+    <div>
+      <div>
+        <label for="currencyFrom">From</label>
+        <select class="form-control custom-select" id="currencyFrom">
+          <option value="0">vnd</option>
+          <option value="0">usd</option>
+          <option value="0">eur</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="currencyTo">To</label>
+        <select class="form-control custom-select" id="currencyTo">
+          <option value="0">vnd</option>
+          <option value="0">usd</option>
+          <option value="0">eur</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <input placeholder="Enter the amount" type="number" id="amount">
+    </div>
+    <button id="convertBtn" class="btn btn-primary">
+      Convert Currency
+    </button>
+    <h2>Results</h2>
+    <span id="result"></span>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
